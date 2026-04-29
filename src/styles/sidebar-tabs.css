@@ -1,57 +1,65 @@
-/* 1. 把顶级大分类移到顶部，做成 Tab 样式 */
-.sidebar-pane ul.top-level {
+/* 1. 只把【最外层的大分类】移到顶部，做成Tab栏 */
+/* 选择器：只作用于sidebar里的【第一层ul】，不影响子菜单 */
+.sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level {
     display: flex;
-    gap: 0.5rem;
-    padding: 0.5rem;
-    background: #f3f4f6;
-    border-radius: 0.75rem;
-    margin-bottom: 1rem;
+    gap: 8px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    margin-bottom: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
-    .sidebar-pane ul.top-level {
-        background: #1f2937;
+    .sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level {
+        background: #1e1e1e;
     }
 }
 
-/* 2. 隐藏大分类的默认展开/折叠箭头 */
-.sidebar-pane ul.top-level > li > details > summary {
-    display: none;
+/* 2. 隐藏大分类自带的展开/折叠箭头 */
+.sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level > li > details > summary {
+    display: none !important;
 }
 
-/* 3. 让大分类的标题（summary 文字）显示出来，作为 Tab 按钮 */
-.sidebar-pane ul.top-level > li > details > span,
-.sidebar-pane ul.top-level > li > details > summary span {
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+/* 3. 让大分类的标题显示为Tab按钮 */
+.sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level > li > details > span,
+.sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level > li > details > summary span {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 16px;
     font-weight: 500;
-    transition: all 0.2s;
     cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
 }
 
-/* 4. 只显示当前激活的大分类的子菜单 */
-.sidebar-pane ul.top-level > li:not(:has(.active)) > details > .details-content {
-    display: none;
-}
-
-/* 5. 激活的 Tab 高亮 */
-.sidebar-pane ul.top-level > li:has(.active) > details > span,
-.sidebar-pane ul.top-level > li:has(.active) > details > summary span {
+/* 4. 高亮当前选中的大分类Tab */
+.sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level > li:has(.active) > details > span,
+.sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level > li:has(.active) > details > summary span {
     background: white;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     color: #2563eb;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 @media (prefers-color-scheme: dark) {
-    .sidebar-pane ul.top-level > li:has(.active) > details > span,
-    .sidebar-pane ul.top-level > li:has(.active) > details > summary span {
-        background: #374151;
+    .sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level > li:has(.active) > details > span,
+    .sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level > li:has(.active) > details > summary span {
+        background: #2d2d2d;
         color: #60a5fa;
     }
 }
 
-/* 6. 调整子菜单的边距，和 Tab 对齐 */
-.sidebar-pane ul.top-level > li > details > .details-content {
-    margin-top: 0.5rem;
+/* 5. 只显示当前选中大分类的子菜单，其他隐藏 */
+.sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level > li:not(:has(.active)) > details > .details-content {
+    display: none !important;
+}
+
+/* 6. 调整子菜单的边距，让它在Tab下方正常显示 */
+.sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level > li > details > .details-content {
+    margin-top: 0;
     padding-left: 0;
+}
+
+/* 7. 把外部链接移到最底部，避免被Tab样式影响 */
+.sidebar-pane > .sidebar-content > .sl-sidebar-state-persist > ul.top-level > li:has(a[href^="http"]) {
+    margin-top: 24px;
 }
