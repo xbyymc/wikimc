@@ -11,6 +11,7 @@ export default defineConfig({
 			defaultLocale: 'zh-CN',
 			locales: {
 				'zh-CN': { label: '简体中文' },
+				'en': { label: 'English' },
 			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			editLink: {
