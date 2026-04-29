@@ -18,20 +18,22 @@ export default defineConfig({
         		baseUrl: 'https://github.com/xbyymc/wikimc/blob/main/',
       		},
 			lastUpdated: true,
-			sidebar: {
-				en: [
-					{ autogenerate: { directory: 'en/survival' } },
-					{ autogenerate: { directory: 'en/guide' } },
-				],
-				'zh-CN': [
-					{ autogenerate: { directory: 'zh-CN/survival' } },
-					{ autogenerate: { directory: 'zh-CN/guide' } },
-				],
-				shared: [
-					{ label: 'SkinMC', link: 'https://skinmc.cn' },
-					{ label: 'HubMC', link: 'https://hubmc.cn' },
-				],
-			},
+			sidebar: [
+				{
+					locales: {
+						'zh-CN': [
+							{ autogenerate: { directory: 'zh-CN/survival' } },
+							{ autogenerate: { directory: 'zh-CN/guide' } },
+						],
+						'en': [
+							{ autogenerate: { directory: 'en/survival' } },
+							{ autogenerate: { directory: 'en/guide' } },
+						],
+					},
+				},
+				{ label: 'SkinMC', link: 'https://skinmc.cn' },
+				{ label: 'HubMC', link: 'https://hubmc.cn' },
+			],
 		}),
 	],
 });
