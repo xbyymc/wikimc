@@ -13,16 +13,16 @@ export default defineConfig({
 				'zh-CN': { label: '简体中文' },
 				'en': { label: 'English' },
 			},
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/xbyymc/wikimc' }],
 			editLink: {
         		baseUrl: 'https://github.com/xbyymc/wikimc/blob/main/',
       		},
 			lastUpdated: true,
 			sidebar: [
-				{ autogenerate: { directory: 'survival' } },
-				{ label: 'SkinMC', link: 'https://skinmc.cn' },
+    			{ slug: 'survival' },
+    			{ label: 'SkinMC', link: 'https://skinmc.cn' },
 				{ label: 'HubMC', link: 'https://hubmc.cn' },
-			],
+  			],
 		}),
 	],
 });
