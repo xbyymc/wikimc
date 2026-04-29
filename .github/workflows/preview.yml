@@ -2,9 +2,9 @@ name: 构建预览测试
 
 on:
   push:
-    branches: [ main ]  # 你推代码就自动构建预览
+    branches: [ main ]
   pull_request:
-    branches: [ main ]  # 别人提PR也自动构建
+    branches: [ main ]
 
 jobs:
   build-and-preview:
@@ -18,21 +18,23 @@ jobs:
       - name: 拉取代码
         uses: actions/checkout@v4
 
-      - name: 安装Node
+      - name: 安装 Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22  # 升级到较新的 LTS 版本，解决弃用警告
+          cache: 'npm'
 
       - name: 安装依赖
-        run: npm install
+        run: npm ci  # 用 npm ci 替代 npm install，更稳定，依赖版本严格匹配
 
-      - name: 构建Astro
+      - name: 构建 Astro
         run: npm run build
+        # 构建失败时，会自动显示错误日志，方便排查
 
       - name: 上传构建产物
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
-      - name: 部署到GitHub Pages预览
+      - name: 部署到 GitHub Pages 预览
         uses: actions/deploy-pages@v4
