@@ -20,11 +20,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: '生存路线',
-					icon: 'rocket',
-					items: [
-    					{ label: '新人路线一', link: '/zh-CN/survival/beginner-1' },
-      					{ label: '新人路线二', link: '/zh-CN/survival/beginner-2' },
-  					]
+					autogenerate: { directory: 'survival' },
 				},
 			],
 		}),
