@@ -19,7 +19,8 @@ export default defineConfig({
       		},
 			lastUpdated: true,
 			sidebar: [
-    			{ slug: 'survival' },
+    			{ slug: 'zh-CN/survival' },
+				{ slug: 'en/survival' },
     			{ label: 'SkinMC', link: 'https://skinmc.cn' },
 				{ label: 'HubMC', link: 'https://hubmc.cn' },
   			],
