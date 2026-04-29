@@ -19,22 +19,19 @@ export default defineConfig({
       		},
 			lastUpdated: true,
 			sidebar: {
-  // 英文
-  en: [
-    { autogenerate: { directory: 'en/survival' } },
-    { autogenerate: { directory: 'en/guide' } },
-    { label: 'SkinMC', link: 'https://skinmc.cn' },
-    { label: 'HubMC', link: 'https://hubmc.cn' },
-  ],
-
-  // 中文
-  'zh-CN': [
-    { autogenerate: { directory: 'zh-CN/survival' } },
-    { autogenerate: { directory: 'zh-CN/guide' } },
-    { label: 'SkinMC', link: 'https://skinmc.cn' },
-    { label: 'HubMC', link: 'https://hubmc.cn' },
-  ],
-},
+				en: [
+					{ autogenerate: { directory: 'en/survival' } },
+					{ autogenerate: { directory: 'en/guide' } },
+				],
+				'zh-CN': [
+					{ autogenerate: { directory: 'zh-CN/survival' } },
+					{ autogenerate: { directory: 'zh-CN/guide' } },
+				],
+				shared: [
+					{ label: 'SkinMC', link: 'https://skinmc.cn' },
+					{ label: 'HubMC', link: 'https://hubmc.cn' },
+				],
+			},
 		}),
 	],
 });
