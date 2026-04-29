@@ -18,6 +18,9 @@ export default defineConfig({
           			label: 'English',
         		},
       		},
+			customCss: [
+        		'./src/styles/sidebar-tabs.css'
+    		],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/xbyymc/wikimc' }],
 			editLink: {
         		baseUrl: 'https://github.com/xbyymc/wikimc/blob/main/',
