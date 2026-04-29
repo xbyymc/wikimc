@@ -6,7 +6,7 @@ import starlightSidebarTopics from 'starlight-sidebar-topics'
 // https://astro.build/config
 export default defineConfig({
 	base: process.env.CI ? '/wikimc' : '/',
-	site: 'https://wikimc.cn',
+	site: process.env.CI ? 'https://xbyymc.github.io/wikimc' : 'https://wikimc.cn',
 	integrations: [
 		starlight({
 			title: '维基MC',
