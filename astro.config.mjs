@@ -53,31 +53,16 @@ sidebar: [
 	},
 
 	{
-		label: '游戏教程',
+		label: '有用链接',
 		translations: {
-			'en': 'Game Guide',
+			'en': 'url',
 		},
 		items: [
-			{
-				label: '发展路线',
-				translations: {
-					'en': 'Development',
-				},
-				items: [
-					{
-						label: '线路一',
-						translations: {
-							'en': 'Route 1',
-						},
-						slug: 'survival/beginner-1',
-					},
-				]
-			}
+			{ label: 'SkinMC', link: 'https://skinmc.cn' },
+			{ label: 'HubMC', link: 'https://hubmc.cn' },
 		]
 	},
 
-	{ label: 'SkinMC', link: 'https://skinmc.cn' },
-	{ label: 'HubMC', link: 'https://hubmc.cn' },
 	
 ],
 			
