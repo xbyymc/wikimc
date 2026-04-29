@@ -18,14 +18,12 @@ export default defineConfig({
           			label: 'English',
         		},
       		},
-			customCss: [
-        		'./src/styles/sidebar-tabs.css'
-    		],
+			customCss: ['./src/styles/sidebar.css'],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/xbyymc/wikimc' }],
-			editLink: {
-        		baseUrl: 'https://github.com/xbyymc/wikimc/blob/main/',
-      		},
+			editLink: { baseUrl: 'https://github.com/xbyymc/wikimc/blob/main/' },
 			lastUpdated: true,
+
+			
 sidebar: [
 	
 	{
@@ -62,9 +60,9 @@ sidebar: [
 			{ label: 'HubMC', link: 'https://hubmc.cn' },
 		]
 	},
-
-	
 ],
+
+
 			
 		}),
 	],
