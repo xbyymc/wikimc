@@ -20,7 +20,8 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: '生存路线',
-					autogenerate: { directory: 'survival-route' },
+					icon: 'rocket',
+					autogenerate: { directory: 'survival' },
 				},
 			],
 		}),
