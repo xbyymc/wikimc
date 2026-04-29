@@ -24,34 +24,57 @@ export default defineConfig({
       		},
 			lastUpdated: true,
 			sidebar: [
-    // 大分类 1
-    {
-        label: '游戏教程',
-        translations: {
-            'en': 'Game Guide',
-        },
-        items: [
-            // 子分类
-            {
-                label: '发展路线',
-                translations: {
-                    'en': 'Development',
-                },
-                items: [
-                    {
-                        label: '线路一',
-                        translations: {
-                            'en': 'Route 1',
-                        },
-                        slug: 'survival/beginner-1',
-                    },
-                ]
-            }
-        ]
-    },
-    // 可以继续加更多大分类
+				
+    			{
+        			label: '游戏教程',
+        			translations: {
+            			'en': 'Game Guide',
+        			},
+        			items: [
+            			{
+                			label: '发展路线',
+                			translations: {
+                    			'en': 'Development',
+                		},
+                			items: [
+                    			{
+                        			label: '线路一',
+                        			translations: {
+                            			'en': 'Route 1',
+                        			},
+                        			slug: 'survival/beginner-1',
+                    			},
+                			]
+            			}
+        			]
+    			},
+				
+    			{
+        			label: '游戏教程',
+        			translations: {
+            			'en': 'Game Guide',
+        			},
+        			items: [
+            			{
+                			label: '发展路线',
+                			translations: {
+                    			'en': 'Development',
+                		},
+                			items: [
+                    			{
+                        			label: '线路一',
+                        			translations: {
+                            			'en': 'Route 1',
+                        			},
+                        			slug: 'survival/beginner-1',
+                    			},
+                			]
+            			}
+        			]
+    			},
 
-],
+				
+			],
 		}),
 	],
 });
