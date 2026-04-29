@@ -1,4 +1,4 @@
-name: 构建预览测试
+name: GitHub Pages Preview
 
 on:
   push:
@@ -6,35 +6,49 @@ on:
   pull_request:
     branches: [ main ]
 
+# 权限必须开对
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
-  build-and-preview:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
     steps:
-      - name: 拉取代码
+      - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: 安装 Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22  # 升级到较新的 LTS 版本，解决弃用警告
-          cache: 'npm'
+          node-version: 20
+          cache: npm
 
-      - name: 安装依赖
-        run: npm install  # 用 npm ci 替代 npm install，更稳定，依赖版本严格匹配
+      - name: Install dependencies
+        run: npm install
 
-      - name: 构建 Astro
+      - name: Build Astro
         run: npm run build
-        # 构建失败时，会自动显示错误日志，方便排查
 
-      - name: 上传构建产物
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: dist
 
-      - name: 部署到 GitHub Pages 预览
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
