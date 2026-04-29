@@ -21,7 +21,9 @@ export default defineConfig({
 				{
 					label: '生存路线',
 					icon: 'rocket',
-					autogenerate: { directory: 'survival' },
+					items: [
+    					{ autogenerate: { directory: "survival" } }
+  					]
 				},
 			],
 		}),
