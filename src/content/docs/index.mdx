@@ -1,0 +1,41 @@
+---
+title: 欢迎来到维基MC
+head:
+  - tag: title
+    content: 欢迎来到维基MC
+description: 这里是你的专属生存指南站，帮你搞定生存发展规划、整合包下载、服务器玩法及攻略。
+template: splash
+editUrl: false
+lastUpdated: false
+hero:
+  tagline: 这里是专属生存指南站，为你一站式提供生存规划、整合包下载、服务器玩法及全套攻略。
+  image:
+    file: ../../assets/home.webp
+  actions:
+    - text: 生存发展路线
+      link: /survival/beginner-1
+      icon: right-arrow
+    - text: 整合包下载
+      link: /download
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## 维基指南
+
+<CardGrid stagger>
+	<Card title="生存路线规划" icon="pencil">
+		查看社区生存服推荐玩法路线与发展顺序
+	</Card>
+	<Card title="客户端整合包" icon="document">
+		获取社区服专用整合包与安装说明
+	</Card>
+	<Card title="服务器玩法" icon="add-document">
+		了解社区生存服规则、功能与常见问题
+	</Card>
+	<Card title="快速入门" icon="setting">
+		新手指南与基础操作说明
+	</Card>
+</CardGrid>
