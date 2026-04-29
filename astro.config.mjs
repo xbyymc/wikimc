@@ -22,7 +22,8 @@ export default defineConfig({
 					label: '生存路线',
 					icon: 'rocket',
 					items: [
-    					{ autogenerate: { directory: "survival" } }
+    					{ label: '新人路线一', link: '/zh-CN/survival/beginner-1' },
+      					{ label: '新人路线二', link: '/zh-CN/survival/beginner-2' },
   					]
 				},
 			],
