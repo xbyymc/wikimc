@@ -19,18 +19,7 @@ export default defineConfig({
       		},
 			lastUpdated: true,
 			sidebar: [
-				{
-					locales: {
-						'zh-CN': [
-							{ autogenerate: { directory: 'zh-CN/survival' } },
-							{ autogenerate: { directory: 'zh-CN/guide' } },
-						],
-						'en': [
-							{ autogenerate: { directory: 'en/survival' } },
-							{ autogenerate: { directory: 'en/guide' } },
-						],
-					},
-				},
+				{ autogenerate: { directory: 'survival' } },
 				{ label: 'SkinMC', link: 'https://skinmc.cn' },
 				{ label: 'HubMC', link: 'https://hubmc.cn' },
 			],
