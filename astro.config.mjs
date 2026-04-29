@@ -19,8 +19,8 @@ export default defineConfig({
 			lastUpdated: true,
 			sidebar: [
 				{
-					label: '发展路线',
-					autogenerate: { directory: 'guides' },
+					label: '生存路线',
+					autogenerate: { directory: 'survival-route' },
 				},
 				{
 					label: 'Reference',
