@@ -4,8 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://wikimc.cn',
 	integrations: [
-		site: 'https://wikimc.cn',
 		starlight({
 			title: '维基MC',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
