@@ -9,10 +9,9 @@ export default defineConfig({
 		starlight({
 			title: '维基MC',
 			defaultLocale: 'zh-CN',
-  			locales: {
-    			zh: '中文',
-    			en: 'English'
-  			},
+      		locales: {
+        		'zh-CN': { label: '简体中文' }
+      		},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			editLink: {
         		baseUrl: 'https://github.com/xbyymc/wikimc/blob/main/',
