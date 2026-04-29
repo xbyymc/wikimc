@@ -11,7 +11,6 @@ export default defineConfig({
 			defaultLocale: 'zh-CN',
 			locales: {
 				'zh-CN': { label: '简体中文' },
-				'en': { label: 'English' },
 			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/xbyymc/wikimc' }],
 			editLink: {
@@ -19,8 +18,7 @@ export default defineConfig({
       		},
 			lastUpdated: true,
 			sidebar: [
-    			{ slug: 'zh-CN/survival' },
-				{ slug: 'en/survival' },
+    			{ autogenerate: { directory: 'zh-CN/survival' } },
     			{ label: 'SkinMC', link: 'https://skinmc.cn' },
 				{ label: 'HubMC', link: 'https://hubmc.cn' },
   			],
