@@ -7,6 +7,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: '维基MC',
+			site: 'https://wikimc.cn',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			editLink: {
         		baseUrl: 'https://github.com/xbyymc/wikimc/blob/main/',
@@ -14,7 +15,7 @@ export default defineConfig({
 			lastUpdated: true,
 			sidebar: [
 				{
-					label: 'Guides',
+					label: '发展路线',
 					autogenerate: { directory: 'guides' },
 				},
 				{
