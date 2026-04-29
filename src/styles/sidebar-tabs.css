@@ -1,0 +1,53 @@
+/* 1. 把顶级大分类移到顶部，做成Tab样式 */
+.sidebar-root > ul {
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background: #f3f4f6;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* 2. 隐藏大分类的默认展开/折叠箭头 */
+.sidebar-root > ul > li > button {
+    display: none;
+}
+
+/* 3. 隐藏非当前激活的大分类的子菜单 */
+.sidebar-root > ul > li:not(:has(.active)) > ul {
+    display: none;
+}
+
+/* 4. 让大分类项看起来像可点击的Tab */
+.sidebar-root > ul > li > a,
+.sidebar-root > ul > li > span {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.sidebar-root > ul > li:has(.active) > a,
+.sidebar-root > ul > li:has(.active) > span {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    color: #2563eb;
+}
+
+/* 5. 调整子菜单的边距，让它和大分类对齐 */
+.sidebar-root > ul > li > ul {
+    margin-top: 0.5rem;
+    padding-left: 0;
+}
+
+/* 深色模式适配 */
+@media (prefers-color-scheme: dark) {
+    .sidebar-root > ul {
+        background: #1f2937;
+    }
+    .sidebar-root > ul > li:has(.active) > a,
+    .sidebar-root > ul > li:has(.active) > span {
+        background: #374151;
+        color: #60a5fa;
+    }
+}
