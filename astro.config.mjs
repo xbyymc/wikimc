@@ -26,58 +26,61 @@ export default defineConfig({
         		baseUrl: 'https://github.com/xbyymc/wikimc/blob/main/',
       		},
 			lastUpdated: true,
-			sidebar: [
-				
-    			{
-        			label: '游戏教程',
-        			translations: {
-            			'en': 'Game Guide',
-        			},
-        			items: [
-            			{
-                			label: '发展路线',
-                			translations: {
-                    			'en': 'Development',
-                		},
-                			items: [
-                    			{
-                        			label: '线路一',
-                        			translations: {
-                            			'en': 'Route 1',
-                        			},
-                        			slug: 'survival/beginner-1',
-                    			},
-                			]
-            			}
-        			]
-    			},
-				
-    			{
-        			label: '游戏教程',
-        			translations: {
-            			'en': 'Game Guide',
-        			},
-        			items: [
-            			{
-                			label: '发展路线',
-                			translations: {
-                    			'en': 'Development',
-                		},
-                			items: [
-                    			{
-                        			label: '线路一',
-                        			translations: {
-                            			'en': 'Route 1',
-                        			},
-                        			slug: 'survival/beginner-1',
-                    			},
-                			]
-            			}
-        			]
-    			},
+sidebar: [
+	
+	{
+		label: '游戏教程',
+		translations: {
+			'en': 'Game Guide',
+		},
+		items: [
+			{
+				label: '发展路线',
+				translations: {
+					'en': 'Development',
+				},
+				items: [
+					{
+						label: '线路一',
+						translations: {
+							'en': 'Route 1',
+						},
+						slug: 'survival/beginner-1',
+					},
+				]
+			}
+		]
+	},
 
-				
-			],
+	{
+		label: '游戏教程',
+		translations: {
+			'en': 'Game Guide',
+		},
+		items: [
+			{
+				label: '发展路线',
+				translations: {
+					'en': 'Development',
+				},
+				items: [
+					{
+						label: '线路一',
+						translations: {
+							'en': 'Route 1',
+						},
+						slug: 'survival/beginner-1',
+					},
+				]
+			}
+		]
+	},
+
+	{ label: 'SkinMC', link: 'https://skinmc.cn' },
+	{ label: 'HubMC', link: 'https://hubmc.cn' },
+	
+],
+			
 		}),
 	],
 });
