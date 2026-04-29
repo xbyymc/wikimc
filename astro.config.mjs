@@ -8,7 +8,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: '维基MC',
-			defaultLocale: 'zh-CN',      // 默认语言
+			defaultLocale: 'zh-CN',
   			locales: {
     			zh: '中文',
     			en: 'English'
