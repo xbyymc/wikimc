@@ -22,10 +22,6 @@ export default defineConfig({
 					label: '生存路线',
 					autogenerate: { directory: 'survival-route' },
 				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
 			],
 		}),
 	],
