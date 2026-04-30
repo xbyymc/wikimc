@@ -1,6 +1,5 @@
 ---
 title: 生存路线
-topic: survival
 description: 我的世界服务器新人入门发展路线，从零开始快速上手，新手必看引导教程。
 ---
 
