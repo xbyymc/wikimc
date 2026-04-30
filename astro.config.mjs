@@ -11,14 +11,7 @@ export default defineConfig({
 		starlight({
 			title: '维基MC',
 			footer: {
-  				copyright: `
-    				<div style="text-align:center; font-size:14px; color:#888;">
-      				<a href="https://beian.miit.gov.cn/" target="_blank" style="color:#888; text-decoration:none;">苏ICP备2026025300号-1</a>
-      				<span style="margin:0 8px;">|</span>
-      				<a href="https://beian.mps.gov.cn/" target="_blank" style="color:#888; text-decoration:none;">苏公网安备xxxxxxxx号</a>
-    				</div>
-  				`
-			}
+  				copyright: `<div style="text-align:center; font-size:14px; color:#888;"><a href="https://beian.miit.gov.cn/" target="_blank" style="color:#888; text-decoration:none;">苏ICP备2026025300号-1</a><span style="margin:0 8px;">|</span><a href="https://beian.mps.gov.cn/" target="_blank" style="color:#888; text-decoration:none;">苏公网安备xxxxxxxx号</a></div>`},
 			defaultLocale: 'root',
       		locales: {
         		'root': {
