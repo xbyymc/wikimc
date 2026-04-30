@@ -23,13 +23,13 @@ export default defineConfig({
             plugins: [
                 starlightSidebarTopics([
                     {
-                        label: '生存路线1',
-                        link: '/survival/beginner-1',
+                        label: '生存路线',
+                        link: '/survival/index',
                         icon: 'open-book',
                         items: ['survival/beginner-1', 'survival/beginner-1'],
                     },
                     {
-                        label: '生存路线2',
+                        label: '使用手册',
                         link: '/survival/beginner-2',
                         icon: 'open-book',
                         items: ['survival/beginner-2', 'survival/beginner-2'],
