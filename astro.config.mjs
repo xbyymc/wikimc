@@ -24,6 +24,7 @@ export default defineConfig({
                 starlightSidebarTopics([
                     {
                         label: '生存路线',
+																							id: 'survival',
                         link: '/survival/index',
                         icon: 'open-book',
                         items: ['survival/beginner-1', 'survival/beginner-1'],
