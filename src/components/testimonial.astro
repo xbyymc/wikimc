@@ -7,14 +7,10 @@ const { name } = Astro.props;
 ---
 
 <li class="testimonial">
+	<p class="name">{name}</p>
 	<blockquote class="quote">
 		<slot />
 	</blockquote>
-	<div class="footer">
-		<div>
-			<p class="name">{name}</p>
-		</div>
-	</div>
 </li>
 
 <style>
@@ -43,16 +39,11 @@ const { name } = Astro.props;
 		margin-top: 0.75em;
 	}
 
-	.footer {
-		display: flex;
-		gap: 1rem;
-		align-items: center;
-	}
-
 	.name {
 		font-weight: 600;
 		font-size: var(--sl-text-h4);
 		color: var(--sl-color-white);
 		line-height: var(--sl-line-height-headings);
+		margin: 0;
 	}
 </style>
