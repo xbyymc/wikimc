@@ -1,11 +1,9 @@
 ---
 interface Props {
-	handle: string;
 	name: string;
-	cite: string;
 }
 
-const { name, handle, cite } = Astro.props;
+const { name } = Astro.props;
 ---
 
 <li class="testimonial">
@@ -15,7 +13,6 @@ const { name, handle, cite } = Astro.props;
 	<div class="footer">
 		<div>
 			<p class="name">{name}</p>
-			<p class="handle">@{handle}</p>
 		</div>
 	</div>
 </li>
@@ -57,8 +54,5 @@ const { name, handle, cite } = Astro.props;
 		font-size: var(--sl-text-h4);
 		color: var(--sl-color-white);
 		line-height: var(--sl-line-height-headings);
-	}
-	.handle {
-		color: var(--sl-color-text-accent);
 	}
 </style>
