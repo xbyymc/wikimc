@@ -1,6 +1,4 @@
 ---
-import { siteConfig } from 'astro:site';
-
 interface Props {
 	title: string;
 }
@@ -12,7 +10,7 @@ const { title } = Astro.props;
 	<div class="header">
 		<h2 class="testimonial-grid-title">{title}</h2>
 		<a 
-			href="${siteConfig.editLink.baseUrl}src/content/docs/index.mdx?plain=1#L48" 
+			href="https://github.com/xbyymc/wikimc/blob/main/src/content/docs/index.mdx?plain=1#L48" 
 			target="_blank" 
 			rel="noopener noreferrer"
 			class="add-testimonial-btn"
