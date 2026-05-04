@@ -41,4 +41,12 @@ const { name } = Astro.props;
 		line-height: var(--sl-line-height-headings);
 		margin: 0;
 	}
+
+	.quote p {
+		display: -webkit-box;
+  		-webkit-line-clamp: 5;
+  		-webkit-box-orient: vertical;
+  		overflow: hidden;
+  		text-overflow: ellipsis;
+	}
 </style>
