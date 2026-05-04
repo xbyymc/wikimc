@@ -2,13 +2,13 @@
 
 > 我的世界专属生存指南站，一站式提供生存规划、整合包下载、服务器玩法及全套攻略。
 
-![GitHub Pages 状态](https://img.shields.io/github/deployments/xbyymc/wikimc/github-pages)
-![仓库大小](https://img.shields.io/github/repo-size/xbyymc/wikimc)
-![最后更新](https://img.shields.io/github/last-commit/xbyymc/wikimc)
+![GitHub Pages 状态](https://img.shields.io/github/deployments/WikiMC-Official/wikimc/github-pages)
+![仓库大小](https://img.shields.io/github/repo-size/WikiMC-Official/wikimc)
+![最后更新](https://img.shields.io/github/last-commit/WikiMC-Official/wikimc)
 
 ## 🔗 访问地址
 - 正式主站：https://wikimc.cn
-- 测试预览站：https://xbyymc.github.io/wikimc/
+- 测试预览站：https://wikimc-official.github.io/wikimc/
 
 ## 📖 项目简介
 维基MC 是面向我的世界玩家的专属生存维基，
@@ -20,8 +20,8 @@
 ## 🌟 贡献者
 感谢每一位参与维护维基MC的小伙伴！
 
-<a href="https://github.com/xbyymc/wikimc/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=xbyymc/wikimc" />
+<a href="https://github.com/WikiMC-Official/wikimc/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=WikiMC-Official/wikimc" />
 </a>
 
 ## 🤝 如何参与贡献
@@ -35,6 +35,6 @@
 ## ⭐ 支持项目
 如果对你有帮助，欢迎点亮仓库 Star，助力项目长期维护更新。
 
-<a href="https://www.star-history.com/?repos=xbyymc%2Fwikimc&type=date&legend=top-left" target="_blank">
-  <img src="https://api.star-history.com/chart?repos=xbyymc/wikimc&type=date&legend=top-left" width="300">
+<a href="https://www.star-history.com/?repos=WikiMC-Official%2Fwikimc&type=date&legend=top-left" target="_blank">
+  <img src="https://api.star-history.com/chart?repos=WikiMC-Official/wikimc&type=date&legend=top-left" width="300">
 </a>
