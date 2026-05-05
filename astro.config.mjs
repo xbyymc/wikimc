@@ -28,6 +28,12 @@ export default defineConfig({
                         icon: 'open-book',
                         items: ['survival/ender-loot', 'survival/gene-tech', 'survival/relax-retire', 'survival/journey-up'],
                     },
+					{
+                        label: '新手指南',
+                        link: '/newbie/',
+                        icon: 'compass',
+                        items: ['newbie/skill-must-know'],
+                    },
                 ]),
             ],
 		}),
