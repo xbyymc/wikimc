@@ -25,13 +25,13 @@ export default defineConfig({
                     {
                         label: '生存路线',
                         link: '/survival/',
-                        icon: 'open-book',
+                        icon: 'star',
                         items: ['survival/ender-loot','survival/gene-tech','survival/journey-up'],
                     },
 					{
                         label: '新手指南',
                         link: '/newbie/',
-                        icon: 'compass',
+                        icon: 'heart',
                         items: ['newbie/skill-must-know'],
                     },
                 ]),
